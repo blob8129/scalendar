@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Day DetailsVC-->
+        <scene sceneID="3jE-a8-uSQ">
+            <objects>
+                <viewController storyboardIdentifier="DayDetailsVC" id="uJA-Iy-mhh" customClass="DayDetailsVC" customModule="SpendingsCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="53v-nP-KjP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zbl-Pv-Iwo">
+                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionCell" textLabel="XQs-oy-EqS" detailTextLabel="WJo-hA-iUq" style="IBUITableViewCellStyleValue1" id="AD9-jB-e77">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AD9-jB-e77" id="x2l-hr-WyB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XQs-oy-EqS">
+                                                    <rect key="frame" x="15" y="14" width="26" height="15.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WJo-hA-iUq">
+                                                    <rect key="frame" x="327" y="14" width="33" height="15.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeO-yI-AY5">
+                                <rect key="frame" x="330" y="20" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneAction:" destination="uJA-Iy-mhh" eventType="touchUpInside" id="riA-wK-tQC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VC-d5-XMU">
+                                <rect key="frame" x="171.5" y="34.5" width="33" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zbl-Pv-Iwo" firstAttribute="trailing" secondItem="yeO-yI-AY5" secondAttribute="trailing" constant="8" id="36I-Mb-5ZM"/>
+                            <constraint firstItem="zbl-Pv-Iwo" firstAttribute="top" secondItem="yeO-yI-AY5" secondAttribute="bottom" constant="8" symbolic="YES" id="4bJ-Pm-I6t"/>
+                            <constraint firstItem="zbl-Pv-Iwo" firstAttribute="top" secondItem="0VC-d5-XMU" secondAttribute="bottom" constant="8" id="KU8-RQ-AjN"/>
+                            <constraint firstItem="0VC-d5-XMU" firstAttribute="centerX" secondItem="53v-nP-KjP" secondAttribute="centerX" id="Pr6-go-VER"/>
+                            <constraint firstItem="zbl-Pv-Iwo" firstAttribute="leading" secondItem="mDS-1d-fi3" secondAttribute="leading" id="TXP-Sc-N2r"/>
+                            <constraint firstItem="yeO-yI-AY5" firstAttribute="top" secondItem="mDS-1d-fi3" secondAttribute="top" id="gry-Lo-otC"/>
+                            <constraint firstItem="mDS-1d-fi3" firstAttribute="trailing" secondItem="zbl-Pv-Iwo" secondAttribute="trailing" id="uh9-Ff-1ct"/>
+                            <constraint firstItem="zbl-Pv-Iwo" firstAttribute="bottom" secondItem="mDS-1d-fi3" secondAttribute="bottom" id="wcW-l1-Ynd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mDS-1d-fi3"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="0VC-d5-XMU" id="5rA-56-zi8"/>
+                        <outlet property="tableView" destination="zbl-Pv-Iwo" id="46p-lu-0B3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aV-1s-Gp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="234.33283358320841"/>
+        </scene>
+    </scenes>
+</document>
