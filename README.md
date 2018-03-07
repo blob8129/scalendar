@@ -1,8 +1,12 @@
 # scalendar
 
+## Usage
+
 <table>
 <tr>
-<td>Define search for GitHub repositories ...</td>
-<th rowspan="9"><img src="https://github.com/blob8129/scalendar/blob/master/SCalendarX.gif?raw=true"></th>
+<th width="30%">In Action</th>
+</tr>
+<tr>
+<th><img src="https://github.com/blob8129/scalendar/blob/master/SCalendarX.gif?raw=true"></th>
 </tr>
 </table>
