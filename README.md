@@ -1,7 +1,9 @@
 # Scalendar
 Scalendar is a native iOS application written as a use case for [Sbanken Api](https://github.com/Sbanken).
+
 TL;DR Client can check his/her spending habits at a glance (📈  or 💸  or 💰). 
-Do you ever wonder on which day of the week you spend most of the money? I bet it's Friday 😉
+
+Do you ever wonder on which day of the week you spend most of the money?🤔 I bet it's Friday 😉
 
 
 ## Features 
@@ -30,8 +32,8 @@ Scalendar doesn't contain any external dependencies. Just clone or download proj
 
 ## Author
 
-Andrey Volobyev blob8129@gmail.com
+Andrey Volobyev
 
 ## Get in touch
 
-If you have any questions, drop me an email
+If you have any questions, drop me an email blob8129@gmail.com
