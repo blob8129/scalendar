@@ -10,7 +10,7 @@ Do you ever wonder on which day of the week you spend most of the money?🤔 I b
   - Gives an instant insight into spending habits
   - Displays summary amount of transactions on all accounts by day, using an intuitive calendar
   - Visually shows periods of spendings, gains, and savings
-  - Analyses and gives statistics, displays longest periods 
+  - Analyses and gives statistics displays longest periods 
   - Shows day of the week on which was spent and gained largest amount of money, relative to other days of the week  
   - Gives a full report of all transactions during the day on all the accounts 
 
