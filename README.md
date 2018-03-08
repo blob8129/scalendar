@@ -1,5 +1,5 @@
 # Scalendar
-Scalendar is a native iOS application written as a use case for [Sbanken Api](https://github.com/Sbanken).
+Scalendar is a native iOS application developed as a use case for [Sbanken Api](https://github.com/Sbanken).
 
 TL;DR Client can check his/her spending habits at a glance (📈  or 💸  or 💰). 
 
